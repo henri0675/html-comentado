@@ -77,3 +77,62 @@
 <link rel="icon" href="favicon.ico"> <!-- Ícone da aba do navegador -->
 
 
+
+
+<!-- ===ORGANIZANDO E POSICIONANDO O HTML=== -->
+
+<!-- A  tag <div></div> é  um  container  utilizado  para  armazenar  qualquer  tipo  de conteúdo. Imagine que poderemos inserir nessa tag um conjunto de outras tags que irão compor o conteúdo da página, melhorando assim a organização do código e facilitando a formatação das informações que serão exibidas no navegador -->
+<!-- Cuidado  com  o conteúdo,  pois  caso  ele  seja  maior  que  altura  definida  para  a <div>,  ocorrerá  o  que chamamos de overflow, o conteúdo excedente ultrapassará o tamanho definido para a div -->
+  <!-- Para resolver esse inconveniente existe a propriedade overflow, ela pode receber os seguintes valores:•Visible: é o valor padrão, o conteúdo que ultrapassar a altura da div, sempre ficará visível.
+   •Hidden:  o conteúdo que ultrapassar a altura da div, não ficará visível.
+   •Scroll:  o  conteúdo  que  ultrapassar  a  altura  da  div,  não  ficará  visível  e  será acessado através de barras de rolagem que serão inseridas automaticamente na div.
+   •Auto:  exibe  apenas  as  barras  de  rolagem  que  serão  necessárias  para acessarmos todo conteúdo da div -->
+
+   <!-- BOX MODEL: descreve como as divs devem ser montadas em nossa página, ele é composto por quatro elementos: 
+    margin, border, padding e content. 
+    Essas quatro propriedades, em conjunto com a largura e altura, definirão como ficará o seu container -->
+    
+    <!-- MARGIN: Define a margem externa da div, entenda essa margem como o distanciamento que a div terá dos demais elementos que formam a página. 
+     Podemos definir os seguintes valores para a margem: top, right, bottom e left -->
+
+     <!-- Declarando quatro valores: o primeiro valor será usado pela margem top, o segundo  valor  pela  margem  right,  o  terceiro  valor  pela  margem  bottom  e  o quarto valor pela margem left.  -->
+
+     <!-- div {/* declaração com um único valor */
+      margin: 20px; Será usado para as quatro margens (top,bottom,right e left)
+      /* declaração com dois valores */
+      margin: 20px 40px; Primeiro valor para top e bottom; right e left
+      /* declaração com três valores */
+      margin: 20px 40px 30px; Top    Right e Left    Bottom
+      /* declaração com quatro valores */
+      margin: 20px 30px 40px 50px; Top   Right   Bottom   Left-->  
+
+
+      <!-- BORDER: Define  a  borda  (contorno)  da  div  ou  de  qualquer  outro  elemento.  
+       Podemos  ter borda:  top,  right,  bottom  e left,  igual  às  margens -->
+       <!-- Border-width: define a largura da borda. É comum encontrar o valor declarado em pixels (px), mas poderá receber outras medidas CSS válidas.
+        •Border-style:   define   estilo   que   a   borda   receberá:   
+        solid(linha   sólida) 
+        double(linha  dupla)  
+        dotted(linha  pontilhada)
+         dashed  (linha  riscada)
+           groove (dependendo  da  cor  as  bordas à esquerda  e  a  superior  ficam  com  cores diferentes das bordas à direita e a inferior) 
+           ridge (inverte a ordem das cores da   opção   groove)   
+           inset(as   bordas   superior   e   esquerda   ficam   mais destacadas) 
+           outset (as bordas inferior e direita ficam mais destacadas)  -->
+
+           <!-- Border-color: define  a  cor da  borda.  
+            É  comum a  cor  ser declarada  em hexadecimal (#), mas poderá receber outros valores para cores válidas. -->
+
+
+            <!-- PADDING -->
+             <!-- Define a margem interna (preenchimento) da div. 
+              Entenda essa margem como o distanciamento que o conteúdo terá das bordas ou extremidades da div. 
+              Podemos definir como valores para o padding: top, right, bottom e left, -->
+
+              <!-- Quando  usamos  padding  em  uma  div,  o  conteúdo  ficará  afastado  das  bordas melhorando assim a sua visualização e apresentação no container. -->
+
+              <!-- Box-sizing, que em  conjunto  com  o  valor border-box, alterará o comportamento dos elementos com padding, permitindo que o espaçamento interno seja aplicado -->
+
+              <!-- Box-shadow: 
+               10px (deslocamento horizontal) 10px (deslocamneto vertical) 10px (desfoque) 10px (extensão) #000 (cor) -->
+               <!-- Inset: valor opcional, quando declarado insere uma sombra interna -->
