@@ -164,3 +164,93 @@
                        <!-- Background-size: Imagens de fundo também poderão ter seu tamanho redimensionado, para isso usamos a propriedade background-size -->
                         <!-- Contain: a imagem  tentará ocupar todo  o  container.  Caso  ela  não  consiga preencher toda a área veremos a cor de fundo do container. 
                          •Cover:a imagem  ocupará toda o  container,  independente  do  seu  tamanho.  -->
+
+
+
+                         <!-- ===SELETORES ESPECIAIS=== -->
+                          <!-- SELETOR DE ID: Representado pelo sinal de hashtag (#) seguido de um nome, o id é um seletor muito importante no desenvolvimento de nossas páginas e servirá como um identificador para as tags HTML -->
+                           <!-- O mesmo valor de um id não  pode  ser  utilizado  por  dois  ou  mais  elementos  na  mesma  página,sendo  assim, nunca repita os valores dos ids no mesmo código. -->
+
+                           <!-- SELETOR DE CLASSE: Representado pelo sinal de ponto final(.) seguido de um nome, a classe é o seletor mais importante no desenvolvimento de nossas regras CSS. 
+                            A ideia principal é que  elas  sejam  usadas  para  criar  formatações  que  podem  ser  aplicadas  a  vários elementos  ao  mesmo  tempo,  isso  significa  que  elas  podem  ser  reutilizadas -->
+
+                            <!-- SELETOR ASTERISCO (*): O seletor * (asterisco) aplicará a formatação a todos os elementos inseridos na página.  
+                             O  uso  dele é  muito  comum  quando  queremos  resetar  alguns  padrões  que  os navegadores aplicam aos elementos assim que a página é renderizada -->
+
+                             <!-- SELETOR DE DESCENDÊNCIA: Usado quando você deseja formatar um elemento que esteja dentro de outro, ou seja um descendente. 
+                              Exemplo: formatar apenas os elementos <p>que estão em uma <div>.  -->
+                                <!-- <div>
+                                  <h1>Meu projeto Web</h1>
+                                  <p>Lorem ipsum dolor sit amet...</p>
+                                  <p>Lorem ipsum dolor sit amet...</p>
+                                  <p>Lorem ipsum dolor sit amet...</p>
+                                </div>
+                                //Formatação CSS
+                                div p {
+                                width: 300px;
+                                height: 50px;
+                                background-color: #dc143c;
+                                color: #fff;
+                                padding: 10px;
+                                margin: 10px 0;
+                                } -->
+
+                                <!-- SELETOR ADJACENTE: Representado  pelo  sinal  de adição  (  +  ),  pode  ser  usado  quando  você  deseja formatar  o  próximo  elemento após o  elemento  citado.  
+                                 Exemplo:  formatar  o  próximo elemento <p> após a tag <ul> -->
+
+                                  <!-- SELETOR IRMÃO: Representado pelo sinal de til ( ~ ), deve ser usado quando você deseja formatar todos os elementos após o elemento citado. 
+                                   Exemplo: formatar todas as tags <p> após a tag <ul> -->
+
+                                    <!-- SELETOR DE FILHOS DIRETOS: Representado pelo sinal de maior que ( > ), deve ser usado quando você deseja formatar  apenas  os  descendentes  diretos  do  elemento.  
+                                     Exemplo:  formatar  apenas  as tags <p> que são descendentes diretos da classe container. -->
+
+
+                                      <!-- ===PSEUDO-CLASSES===
+                                         Podemos  colocar  ao  lado  do  nome  do  seletor  algumas  palavras-chave  que ajudarão  na  formatação  do  elemento  conforme  o  estado  dele.  
+                                       Entenda  que  o  estado pode ser alterado por fatores externos ou ações do usuário: quando o elemento é clicado, quando passamos o mouse sobre, quando é selecionado etc.-->
+
+                                       <!-- PSEUDO-CLASSE :hover
+                                        Aplica uma formatação quando o mouse passar sobre algum elemento, assim que o mouse sair, ele voltará o seu estado normal. 
+                                        Exemplo: aplicar a formatação CSSassim que o mouse passar em qualquer tag <li>.
+                                          li:hover {
+                                          width: 300px;
+                                          height: 50px;
+                                          background-color: #dc143c;
+                                          color: #fff;
+                                          margin: 10px 0;
+                                          } -->
+
+                                          <!-- PSEUDO-CLASSE :nth-child 
+                                           Aplica  uma  formatação  a  um  elemento  conforme  a  sua  posição  dentro  de  um grupo. 
+                                           Exemplo: deixar a quarta div com cor de fundo #dc143c e cor da fonte #ffffff
+                                           Podemos também usar as palavras-chave odd (ímpar) e even (par) para aplicar formatações para elementos nessas posições-->
+
+                                           <!-- PSEUDO-CLASSE :first-child -:last-child 
+                                            Aplica uma formatação ao primeiro e ao último elemento de um grupo-->
+
+                                            <!-- PSEUDO-CLASSE :not
+                                             Através  dessa  pseudo-classe  podemos  declarar  uma  negação  para  que  uma determinada regra não seja aplicada a um elemento -->
+
+                                             <!-- PSEUDO-CLASSE :has
+                                              Através dessa pseudo-classe podemos verificar se um determinado seletor existe dentro de um elemento pai. -->
+
+
+                                              <!-- ===PSEUDO-ELEMENTOS=== -->
+
+                                              <!-- PSEUDO-ELEMENTOS ::first-line
+                                               Aplica uma formatação na primeira linha da tag <p>. -->
+
+                                                <!-- PSEUDO-ELEMENTOS ::before -::after
+                                                 Esses pseudo-elementos são muito legais de serem usados pois permitem que algum conteúdo possa ser inserido antes ou depois do seletor a ele associado -->
+                                                 <!-- Como exemplo,temos uma tag <h1> e um pequeno parágrafo. Queremos colocar uma linha divisória entre o <h1> e a tag <p> usando o pseudo-elemento ::after -->
+                                                  <!-- h1::after {
+                                                   content: '';
+                                                   width: 80%;
+                                                   height: 3px;
+                                                   background-color: #dc143c;       
+                                                   margin: 10px auto;
+                                                   display: block;  -->
+
+                                                   <!-- PSEUDO-ELEMENTOS selection -->
+                                                    <!-- Aplica uma formatação ao conteúdo que for selecionado pelo usuário. -->
+
