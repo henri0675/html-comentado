@@ -254,3 +254,224 @@
                                                    <!-- PSEUDO-ELEMENTOS selection -->
                                                     <!-- Aplica uma formatação ao conteúdo que for selecionado pelo usuário. -->
 
+
+
+                                                    <!-- ===TABELAS=== -->
+                                                     <!-- Tabelas são usadas para a exibição de dados. tabela  de  pontos  dos  times  em  um  campeonato,  tabela  de  valores  de  um produto, tabela de funcionários de uma empresa, tabela com a relação de hotéis em uma cidade  -->
+
+                                                     <!-- 1- TAG "TABLE" -->
+                                                    <!-- Para  criarmos  nossas  tabelas  em  HTML  usamos  a  tag <table></table>.  
+                                                     Será dentro dela que deve ficar todo o conteúdo que formará a tabela. 
+                                                     Esse conteúdo deverá estar dentro das linhas e das suas respectivas colunas. 
+                                                     Apenas com a tag <table>não teremos nenhuma visualização no navegador -->
+
+
+                                                      <!-- 2- TAG "CAPTION" -->
+                                                       <!-- A  tag <caption></caption> insere  um  título  na  tabela. 
+                                                         Esse  título  poderá  ser usado  para  identificar  o  conjunto  de  dados  que  a  tabela  representa. 
+                                                          Pensando  na usabilidade use sempre essa tag. 
+                                                          Ela deverá estar logo após a abertura da <table> -->
+
+
+                                                            <!-- 3- TAG "tr" -->
+                                                             <!-- Utilizada para a criação das linhas que existirão na tabela. 
+                                                              Dentro de cada linha teremos as respectivas colunas com seus conteúdos. 
+                                                              A sigla tr significa “table row”. -->
+
+
+                                                              <!-- 4- TAG "td" -->
+                                                               <!-- Utilizada para a criação das colunas na tabela. 
+                                                                Elas devem ficar dentro da tag <tr> possibilitando assim a exibição dos dados. 
+                                                                  É dentro da <td>que as informações devem ser inseridas. 
+                                                                    A sigla td significa “table data”. -->
+
+                                                              
+                                                              <!-- 5- TAG "th" -->
+                                                               <!-- Podemos substituir a tag <td> pela tag <th>, a diferença visual é que essa tag deixará o nome da coluna centralizado e com estilo negrito.
+                                                                 Mas a principal diferença será a acessibilidade para pessoas com leitores de tela ele informará o que significa cada uma das colunas -->
+
+
+                                                                 <!-- ===AGRUPANDO ELEMENTOS NA TABELA=== -->
+                                                                  <!-- Você poderá dividir o conteúdo da sua tabelaem cabeçalho, corpo e rodapé. 
+                                                                   Eles não são obrigatórios, mas poderão ajudar a agrupar os dados existentes na tabela de uma forma mais organizada e dar uma mãozinha na hora da formatação com a CSS.
+                                                                    Para fazer essa divisão você deve usar as tags: <thead>, <tbody> e<tfoot>. -->
+
+                                                                      <!-- 6- TAG "thead" -->
+                                                                       <!-- Após o uso da tag <caption>, podemos criar o que chamamos de cabeçalho da tabela utilizando a tag <thead>.  
+                                                                        Ele  servirá  para  identificar a primeira  linha da  tabela, aquela que provavelmente terá os nomes de cada coluna de dados. -->
+
+
+                                                                        <!-- 7- TAG "tbody" -->
+                                                                         <!-- Podemos inserir todas as informações da tabela nas linhas e colunas de dados da  tabela,  para  isso  usamos  o  elemento<tbody>,  o  corpo  da  tabela. 
+                                                                           A  ideia  é  a organização dos dados agrupando-os em uma área específica da tabela -->
+
+
+                                                                           <!-- 8- TAG "tfoot" -->
+                                                                            <!-- A tag <tfoot> representará a linha de rodapé da sua tabela. 
+                                                                              Seu uso é totalmente opcional e muitas vezes você encontrará tabelas sem esse elemento. 
+                                                                              Na maioria das vezes,usamos o <tfoot> como uma linha para alguma observação sobre os dados: um comentário, marca de rodapé, algo nesse sentido -->
+
+
+                                                                                <!-- ===MESCLANDO LINHAS E COLUNAS=== -->
+                                                                                 <!-- Podemos  mesclar  linhas  ou  colunas  em  uma  tabela,  para  isso, usamos  os atributos colspan e rowspan -->
+
+
+                                                                                 <!-- 1- ATRIBUTO "COLSPAN" -->
+                                                                                  <!-- O atributo colspan define o número de colunas que devem ser mescladas. 
+                                                                                   Imagine que temos uma linha <tr>com 4 colunas e desejamos que o conteúdo fique apenas em uma  única  coluna,  para  isso  basta  inserir  na  primeira <td> dessa  linha,  o  atributo colspan com o número de colunas que desejamos mesclar, nesse exemplo o valor será 4. -->
+                                                                                    <!-- <td colspan=”4”> -->
+
+
+                                                                                      <!-- 2- ATRIBUTO "ROWSPAN" -->
+                                                                                       <!-- O atributo rowspan define o número de linhas que devem ser mescladas. 
+                                                                                        Imagine que queremos uma coluna com apenas um único valor para todas as 3 linhas de uma tabela. 
+                                                                                        Basta inserir na primeira <td> o atributo rowspan,seguido do número de linhas que desejamos mesclar, nesse caso 3 linhas. -->
+                                                                                          <!-- <td rowspan=”3”> -->
+
+
+
+                                                                                            <!-- ===CRIANDO E ESTILIZABDO UMA TABELA=== -->
+
+                                                                                            <!-- 1- HTML -->
+                                                                                             <!-- <table>
+                                                                                              <caption>Lista de disciplinas</caption>
+                                                                                              <thead>
+                                                                                                <tr>
+                                                                                                  <th>Nome da disciplina</th>
+                                                                                                  <th>Quantidade de aulas</th>
+                                                                                                  <th>Quantidade de tarefas</th>
+                                                                                                  <th>Número de créditos</th>
+                                                                                                </tr>
+                                                                                              </thead>
+                                                                                              <tbody>
+                                                                                                <tr>
+                                                                                                  <td>Lógica com Java</td>
+                                                                                                  <td>80</td>
+                                                                                                  <td>06</td>
+                                                                                                  <td>10</td>
+                                                                                                </tr> -->
+                                                                                                <!-- <tr>
+                                                                                                  <td>Programação Web</td>
+                                                                                                  <td>60</td>
+                                                                                                  <td>05</td>
+                                                                                                  <td>08</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                  <td>Desenvolvimento Mobile</td>
+                                                                                                  <td>60</td>
+                                                                                                  <td>05</td>
+                                                                                                  <td>08</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                  <td>Banco de Dados</td>
+                                                                                                  <td>80</td>
+                                                                                                  <td>06</td>
+                                                                                                  <td>10</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                  <td>Agile</td>
+                                                                                                  <td>50</td
+                                                                                                    td>03</td>
+                                                                                                    <td>05</td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                    <td>UX/UI</td>
+                                                                                                    <td>50</td>
+                                                                                                    <td>03</td>
+                                                                                                    <td>05</td>
+                                                                                                  </tr>
+                                                                                                </tbody>
+                                                                                                <tfoot>
+                                                                                                  <tr>
+                                                                                                    <td   colspan="4">Dados   atualizados -Nov/2022</td></tr></tfoot></table -->
+
+
+                                                                                          <!-- 2-CSS -->
+                                                                                           <!-- @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap');
+                                                                                            
+                                                                                           :root {
+                                                                                           --color-light: #f6f6f6;
+                                                                                           --color-blue: rgb(42, 67, 99);
+                                                                                           --color-blue-alpha: rgba(42, 67, 99, .9);
+                                                                                           
+                                                                                           }
+                                                                                           
+                                                                                           *{
+                                                                                           margin: 0;
+                                                                                           padding: 0;
+                                                                                           box-sizing: border-box;
+                                                                                           font-family: 'Open Sans', sans-serif;
+                                                                                           }
+                                                                                           
+                                                                                           table {
+                                                                                           width: 80%;
+                                                                                           margin: 10px auto;    
+                                                                                           border-collapse: collapse; 
+                                                                                           text-align: center;
+                                                                                           }
+                                                                                           
+                                                                                           caption {
+                                                                                           font-size: 2rem;
+                                                                                           color: var(--color-blue);
+                                                                                           font-weight: 900;
+                                                                                           margin-bottom: 10px;
+                                                                                           }
+                                                                                           
+                                                                                           thead tr {
+                                                                                           background: var(--color-blue);  
+                                                                                           color: #fff;    
+                                                                                           }
+                                                                                           
+                                                                                           th,td {
+                                                                                           width: 25%;
+                                                                                           padding: 15px;
+                                                                                           
+                                                                                           }
+                                                                                           tbody tr {
+                                                                                           border-bottom: 1px solid #ccc;
+                                                                                           }
+                                                                                           
+                                                                                           tbody tr:nth-child(even) {
+                                                                                           background: #f9f9f9;
+                                                                                           }
+                                                                                           
+                                                                                           tbody tr:last-child {
+                                                                                           border-bottom: 20px solid var(--color-blue);
+                                                                                           }
+                                                                                           
+                                                                                           tbody tr:hover {
+                                                                                           font-weight: 900;
+                                                                                           background-color: var(--color-blue-alpha);
+                                                                                           color: #ffffff;cursor: pointer;
+                                                                                           }
+                                                                                           
+                                                                                           tfoot {
+                                                                                           font-weight: 700;
+                                                                                           } -->
+
+
+                                                                                           <!-- EXPLICANDO O CÓDIGO -->
+                                                                                            <!-- 1- A  tabela  ocupará  80%  do  tamanho  da  tela  e  foi  centralizada.
+                                                                                             Para isso, as margens  receberam  os  valores  de  10px  para  a  margem  superior,inferior  e automática   para   a   direita   e   esquerda. 
+                                                                                               Perceba   que   temos   uma   nova propriedade: border-collapse com o valor collapse, ele irá juntar as bordas da tabela não permitindo que exista algum espaço entre as suas colunas. 
+                                                                                               Todo conteúdo da tabela foi centralizado. -->
+
+                                                                                               <!-- 2- O caption teve o tamanho do texto aumentado, em conjunto com o peso da fonte e alteração na sua cor. 
+                                                                                                Também definimos uma margem inferior em 10px.
+                                                                                                
+                                                                                                3- As linhas que estão no thead,tiveram a cor de fundo e fonte modificada pelas variáveis declaradas.
+                                                                                                
+                                                                                                4- Todas as thse tds terão o preenchimento em 15px e largura de 25% -->
+
+                                                                                                <!-- 5- Todas as linhas de dados do tbody tr, terão borda inferior.
+                                                                                                 
+                                                                                                6- Usamos também uma pseudo-classe para as linhas pares do corpo da tabela: tbody tr:nth-child(even). 
+                                                                                                Dessa forma,a tabela é exibida como se estivesse “zebrada”, facilitando assim a leitura do usuário.
+                                                                                                
+                                                                                                7- Já na última linha do tbody,usamos a pseudo-classe tbody tr:last-childpara aplicar uma borda inferior.
+                                                                                                
+                                                                                                8- Quando passarmos o mouse sobre as linhas do tbody, teremos a mudança da cor da fonte e da cor de fundo da linha onde o mouse estiver posicionado.
+                                                                                                Mais uma forma de ajudar na leitura dos dados da tabela.
+                                                                                                
+                                                                                                9- O tfoot teve a espessura da fonte alterada.  -->
+
