@@ -475,3 +475,63 @@
                                                                                                 
                                                                                                 9- O tfoot teve a espessura da fonte alterada.  -->
 
+
+
+
+                                                                                                <!-- ===VARIÁVEIS - UNIDADE DE MEDIDA - ÍCONES=== -->
+
+                                                                                                <!-- 1- VARIÁVEIS
+                                                                                                 Criar variáveis é bem simples, você deve declarar a variável dentro do seletor no qual ela  será  usada 
+                                                                                                 Os  nomes  das  variáveis  devem  iniciar  com dois  hifens  (--),  seguido  do nome desejado e do valor que ela irá iniciar. 
+                                                                                                 Para usar essa variável, basta chamá-la dentro dos elementos que a utilizarão, para isso utilizamos a função var()
+                                                                                                 :root {
+                                                                                                 --blue: rgb(14, 14, 112);
+                                                                                                 --pink: #dc143c;
+                                                                                                 --f-weight: 900;
+                                                                                                 --f-size: 18px;
+                                                                                                  }
+                                                                                                 Quando você declarar suas variáveis dentro do :root, elas terão o escopo global, ou seja, todos os elementos da página poderão ter acesso a essa variável-->
+
+
+                                                                                                 <!-- 2- UNIDADES DE MEDIDA 
+                                                                                                  
+                                                                                                 PIXEL (PX): é conhecida por ser  uma  medida  fixa,  ou  seja,  quando  definimos  um  valor  em  pixels,  esse  valor  não mudará, independentemente do dispositivo usado para fazer o acesso à essa página.  
+                                                                                                  O  pixel  pode  se  transformar  em  um  grande  aliado,  pois  podemos  definir tamanhos máximos e mínimos em pixels e usá-los como um parâmetro para as demais medidas.
+                                                                                              
+                                                                                                  
+                                                                                                  PORCENTAGEM (%): A porcentagem  é  uma  unidade  de  medida  relativa.  Ela  fará  os  cálculos  dos tamanhos dos elementos baseado no seu elemento pai.
+                                                                                                  Sendo assim, se um elemento pai for declarado com uma largura de 100%, e ele possuir dois filhos declarados com largura  de  50%,  então eles  ocuparão  50%  do  tamanho  do  seu  pai.
+                                                                                                  Caso  o  elemento  pai  for  um  container,  será  melhor  definir  a  largura  usando porcentagem. 
+                                                                                                  Dessa forma, o container sempre será proporcional ao tamanho da tela.
+
+                                                                                                  VW e VH: O  uso  dessas  duas  medidas  facilitará  muito  nosso trabalho,  pois  como  elas  se baseiam  pela  largura  e  altura  do  viewport,  o  container vai  seajustarem  todos  os dispositivos.
+                                                                                                   Não esqueça de inserir a meta tag viewport na seção <head> de sua página, será ela a responsável por detectar o tamanho do viewport do dispositivo:
+                                                                                                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                                                                                    .container-um {
+                                                                                                    width: 100vw;
+                                                                                                    height 100vh;
+                                                                                                    }
+                                                                                                    .container-dois {
+                                                                                                    width: 50vw;
+                                                                                                    height 100vh;
+                                                                                                    }
+                                                                                                    .container-tres {
+                                                                                                    width: 100vw;
+                                                                                                    height 50vh;
+                                                                                                    }
+                                                                                                  -->
+
+
+                                                                                                  <!-- VMIN e VMAX:As unidades vmin e vmax utilizarão, respectivamente, o menor viewport e o maior viewport.
+                                                                                                   Vamos imaginar que temos um viewport de 1200px de altura e 700px de largura. 
+                                                                                                   O  viewport  que  será  usado  pelo  vmin  será  o  de  700px  (ele  é  o menor),  e  o  que  será usado  pelo  vmax  será  o  de  1200px  (ele  é  o  maior). 
+                                                                                                   
+                                                                                                   
+                                                                                                   EM: a unidade em usará o tamanho da fonte do elemento  pai,  que  deverá  ser  em  pixels,  e  multiplicará  pelo  valor  atribuído  aos  filhos
+                                                                                                    browser multiplicará o valor definido na medida emdo filho pelo valor atribuído ao tamanho da fonte do pai em pixels.
+                                                                                                    
+                                                                                                    
+                                                                                                    REM: A unidade de medida relativa rem é bem parecida com a medida em, só que ao invés  de  usar  o  tamanho  da  fonte  do  elemento  pai,  ela  usará  o  tamanho  da  fonte  do elemento rootda página-->
+
+
+                                                                                                    
