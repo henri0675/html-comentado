@@ -703,3 +703,60 @@
                                                                                                             Imagine que cada elemento é uma camada, elas podem ficar uma acima da outra, o z-index controlará essa ordem
 
                                                                                                              -->
+
+                                                                                                             <!-- ===FORMULÁRIOS=== -->
+
+                                                                                                             <!-- Com eles será possível:  preencher  um  cadastro,  fazer  alguma  pergunta,  responder  uma  enquete, enviar  um  feedback,  efetuar  um login,  etc 
+
+                                                                                                             Um formulário é uma página HTML com uma série de componentes (campos) que podem ser preenchidos ou selecionados pelo usuário, e ao final ele poderá clicar em um botão que enviará as informações digitadas para um servidor web
+
+                                                                                                             1- Tag FORM
+                                                                                                             Para criarmos um formulário HTML usaremos a tag <form></form>,será em seu  interior  onde  definiremos  os  componentes  que  deverão  ser  vistos  e  utilizados pelos  usuários  da  nossa  aplicação.
+                                                                                                             A  tag  <form>  possui  alguns  atributos  que  irão identificar o formulário e controlar como as informações digitadas serão enviadas.
+
+                                                                                                             
+                                                                                                             PRIMEIRO ATRIBUTO: NAME
+                                                                                                             Define um nome a ser atribuído ao formulário. É um atributo importante pois algumas linguagens  de  programação  farão  uso  dele  para  recuperar  o  que  foi selecionado
+
+
+                                                                                                             SEGUNDO ATRIBUTO: ID
+                                                                                                             Define um identificador para o formulário, lembrando que o valor atribuídobnão poderá ser usado por mais nenhum outro elemento na mesma página
+
+
+                                                                                                             TERCEIRO ATRIBUTO: ACTION
+                                                                                                             Define o que irá acontecer com os dados digitados quando o usuário pressionar o  botão  de  envio,  ou  seja,  submeter  o  formulário.  
+                                                                                                             Basicamente  eles  poderão  ser enviados para: uma nova página, para um e-mail, para uma tabela em algum banco de dados ou para algum servidor web onde serão processados.
+
+
+                                                                                                             QUARTO ATRIBUTO: METHOD
+                                                                                                             Esse atributo define qual o tipo de método que será usado para enviar os dados digitados, possuímos o método GETe o método POST.
+                                                                                                             O método GETé o padrão, ele utiliza a URLeo local onde você digita o endereço de um site no browser, para enviar as informações digitadas ao servidor.
+
+                                                                                                             O método POST envia as informações incluídas (encapsuladas) no corpo da  mensagem,  evitando  assim  a  sua  visualização. É  bem
+                                                                                                             usado  para formulários de contato, formulários de login, envio de arquivos etc.
+
+                                                                                                             <form name="nome"id="identificador"method="post"action="endereço do script">
+
+
+
+                                                                                                             2 - Tag FIELDSET
+                                                                                                             Esta tag pode ser usada para hierarquizar um conjunto de dados que tenham algum  tipo  de  relação  entre  si, será  inserida  uma  borda  envolvendo  todos  os  seus elementos descendentes.
+
+
+
+                                                                                                             3 - Tag LEGEND
+                                                                                                             Insere  uma  legenda  para  o  elemento <fieldset>. Ela  funcionará  como  um identificador ao usuário, no momento de preenchimento dos dados:
+
+                                                                                                              <form name="dados" id="dados" action=""method="post">
+                                                                                                                <fieldset>
+                                                                                                                  <legend>Dados pessoais</legend>
+                                                                                                                </fieldset>
+                                                                                                              </form>
+
+
+                                                                                                             4 - Tag LABEL 
+                                                                                                             Insere um identificador para um respectivo campo do formulário, podendo ser uma  palavra  ou  frase.  Possui  o  atributo for,que  permitirá  a  criação  de  um  vínculo entre o identificador e algum campo. 
+                                                                                                             Se o usuário clicar neste identificador,o campo linkado   ganhará   foco   automaticamente,   melhorando   muito   a   usabilidade   do componente. 
+                                                                                                             <label for="id do campo">Nome do usuário</label>
+
+                                                                                                             -->
