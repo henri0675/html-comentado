@@ -759,4 +759,165 @@
                                                                                                              Se o usuário clicar neste identificador,o campo linkado   ganhará   foco   automaticamente,   melhorando   muito   a   usabilidade   do componente. 
                                                                                                              <label for="id do campo">Nome do usuário</label>
 
+
+                                                                                                             5 - Tag INPUT
+                                                                                                             Esta  tag  é  responsável  pela  inserção  da  maioria  dos  componentes  do formulário. Possui vários atributos entre eles o type, que receberá como valor o tipo de campo que desejamos inserir no formulário.
+
+
+                                                                                                             ATRIBUTO 1 - TEXT
+                                                                                                             Insere  um  campo  de  texto  para  a  digitação  dos  dados  pelo  usuário.  
+                                                                                                             Nesse campo  ele  poderá  digitar:  letras,  números  e  caracteres  especiais.
+
+                                                                                                             <input type="text"id="nome"name="nome">
+
+                                                                                                             ATRIBUTO 2 - PASSWORD
+                                                                                                             Insere  um  campo  para  a  digitação  de  uma  senha  pelo  usuário.  
+                                                                                                             Ele  poderá digitar  letras,  números  e  caracteres  especiais.
+
+                                                                                                             <input type="password"id="senha"name="senha">
+
+
+                                                                                                             ATRIBUTO 3 - DATE
+                                                                                                             Insere  um  campo  para  a  digitação  ou  seleção  de  datase,  assim  que  ele  for clicado, aparecerá  um  calendário  onde  o  usuário  poderá  fazer  a  escolha  da  data.
+
+
+                                                                                                             <input type="date"id="data"name="data">
+
+
+
+                                                                                                             ATRIBUTO 4 - TIME
+                                                                                                             Insere  um  campo  para  a  digitação  ou  seleção  da  hora e,  assim  que  ele  for clicado, aparecerá uma caixa para o usuário selecionar a hora
+
+
+                                                                                                             <input type="time"id="hora"name="hora">
+
+
+                                                                                                             ATRIBUTO 5 - DATETIME-LOCAL
+                                                                                                             Insere um campo para a digitação ou seleção da data e da hora, ou seja, os dois campos anteriores abordados em apenas um.
+                                                                                                             
+
+                                                                                                             <input type="datetime-local"id="data"name="data">
+
+
+
+                                                                                                             ATRIBUTO 6 - MONTH
+
+                                                                                                             Insere um campo para a digitação ou seleção de um determinado mês e ano
+
+
+                                                                                                             <input type="month"id="mes"name="mes">
+
+
+                                                                                                             ATRIBUTO 7 - WEEK
+
+                                                                                                             Insere um campo para a digitação ou seleção de uma determinada semana do ano
+
+                                                                                                             <input type="week"id="semana"name="semana">
+
+
+
+                                                                                                             ATRIBUTO 8 - EMAIL
+
+                                                                                                             Insere um campo para a digitação de um endereço de email. 
+                                                                                                             Basicamente é um campo do tipo textque consegue oferecer algumas vantagens
+
+
+                                                                                                             Ele tem validação própria, não permite que o formulário seja enviado caso o  conteúdo  digitado  nesse  campo  não  for  um  endereço  de  e-mail  válido: deve possuir sinal de arroba(@)e ponto final (.).
+
+                                                                                                             Os  smartphones  reconhecem  este  campo  e  exibem  o  teclado  já  com  a opção “.com”e o símbolo de arroba(@).
+
+                                                                                                             <input type="email"id="email"name="email">
+
+
+                                                                                                             ATRIBUTO 9 - URL
+
+                                                                                                             Insere  um  campo  para  a  digitação  de  uma  URL,  o  endereço  de  um  site.
+
+                                                                                                             <input type="url"id="site"name="site">
+
+
+                                                                                                             ATRIBUTO 10 - SEARCH
+
+                                                                                                             Insere um campo de texto que poderá ser utilizado na implementação de um sistema  de  busca,  isso  só  ocorrerá  com  a  utilização  de  alguma  linguagem  de programação auxiliando o HTML
+
+                                                                                                             <input type="search"id="busca"name="busca">
+
+
+                                                                                                             ATRIBUTO 11 - NUMBER
+
+                                                                                                             Insere um campo para a digitação de um número. Na parte final do campovocê encontrará setas para aumentar ou diminuir o valor digitado. 
+                                                                                                             Quando utilizamos esse campo, podemos definir os seguintes atributos para escalonar valores:
+
+                                                                                                             Atributo min: define o menor valor do intervalo. 
+                                                                                                             Ex: min=“10”-irá iniciar o intervalo de valores no número 10.
+
+                                                                                                             Atributo max: define o maior valor possível do intervalo. 
+                                                                                                             Ex: max=“100”-irá finalizar o intervalo de valores no número 100
+
+                                                                                                             Atributo  step:  define um intervalo  de  valores. 
+                                                                                                              Ex:  step=“5”–neste  caso exibirá os valores iniciando pelo menor valor definido, pulando de 5 em 5 até chegar ao valor máximo
+
+                                                                                                              <input type="number"id="rm"name="rm"min="10000"max="20000"step="100">
+
+
+                                                                                                              ATRIBUTO 12 - RANGE 
+
+                                                                                                              Insere uma barra deslizante para receber um valor de um intervalo previamente determinado. O intervalo padrão é de 0 a 100 podendo ser alterado conforme as suas necessidades.
+                                                                                                               Esse componente também aceita os atributos: min, max e step
+
+                                                                                                               <input type=“range”id=“preco”name=“preco”min=“100”max=“1000”step=“50”>
+
+
+                                                                                                               ATRIBUTO 13 - TEL
+
+                                                                                                               Insere um campo para a digitação do númerode telefone.
+
+                                                                                                               <input type="tel"id="celular"name="celular">
+
+
+                                                                                                               ATRIBUTO 14 - COLOR
+
+                                                                                                                Insere um campo que permitirá aousuário a seleção deuma cor em uma paleta definida. Com a utilização de alguma linguagem de programação, poderemos utilizar a  cor  selecionada  em qualquer  parte  da  página.  
+                                                                                                                Um exemplo  comum  é permitir  ao usuário que troque as cores da página, tanto background quanto as fontes.
+
+                                                                                                                <input type="color"id="cor"name="cor">
+
+
+                                                                                                                ATRIBUTO 15 - RADIO
+
+                                                                                                                Insere campos de seleção permitindo ao usuário a escolha de uma única opção entre as apresentadas. O usuário poderá mudar a seleção efetuada, mesmo assim ficará apenas com uma opção selecionada. Para que esse componente funcione de forma correta, deveremos usar o atributo name contendo o mesmo valor para todos os elementos inseridos
+
+                                                                                                               <input type="radio" name="area" id="dev"value="1"> 
+                                                                                                               <label for="dev"> Desenvolvimento </label>
+                                                                                                               <input type="radio" name="area" id="banco"value="2"> 
+                                                                                                               <label for="banco"> Banco deDados </label>
+                                                                                                               <input type="radio" name="area" id="projeto"value="3"> 
+                                                                                                               <label for="projeto"> Gestão de Projetos </label>
+
+
+                                                                                                               ATRIBUTO 16 - CHECKBOX
+
+                                                                                                               Insere campos de seleção permitindo ao usuário a escolha de quantas opções ele quiser
+
+                                                                                                               <input type="checkbox" name="area" id="dev"value="1"> 
+                                                                                                               <label for="dev"> Desenvolvimento </label> 
+                                                                                                               <input type="checkbox" name="area" id="banco"value="2"> 
+                                                                                                               <label for="banco"> Banco de Dados </label> 
+                                                                                                               <input type="checkbox" name="area" id="projeto"value="3"> 
+                                                                                                               <label for="projeto"> Gestão de Projetos </label>
+
+
+                                                                                                               ATRIBUTO 17 - FILE
+
+                                                                                                               Insere um campo que permite a seleção e o envio de arquivos. 
+                                                                                                               É composto por um botão e uma área onde o usuário pode selecionar o arquivo que deseja enviar.
+
+                                                                                                               <legend>Dados do usuário</legend>
+                                                                                                               <labelfor="arquivo">Selecione um arquivo:</label>
+                                                                                                               <input type="file"id="arquivo"name="arquivo">
+
+
+
+                                                                                                             
+
                                                                                                              -->
